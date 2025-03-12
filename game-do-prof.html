@@ -9,19 +9,42 @@
     <script>
    let numeroAleatorio = Math.random()*10;
    let numeroAleatorioInteiro = Math.round(numeroAleatorio)
-   document.write(numeroAleatorioInteiro)
+  // document.write(numeroAleatorioInteiro)
 
-   let numero = prompt("Acerte o numero de 1 a 10, que o computador esta pensando");
+   let numero = prompt("Digite um número de 1 a 10")
 
-   let cumprimento = (numeroAleatorioInteiro == numero ) ?
-                     "Parabéns amigo!":
+   let resultado = (numero >=1 && numero <=10) ?
+                          (numero == numeroAleatorioInteiro) ?
+                            "Parabéns! Você acertou!":
+                            "Você errou! O numero que eu pensei era " + 
+                                         numeroAleatorioInteiro + "!":
+                                         "Número inválido"
+                                         document.write(resultado)
 
 
-                     (numeroAleatorioInteiro == 0 ) ?
-                     "Que pena! Vai ficar para a próxima!":
+
+
+
+
+
+
+   //if(numero == numeroAleatorioInteiro){
+    //document.write("Parabéns! Você acertou!");
+//}else{
+  //  document.write("Você errou! O numero era" + numeroAleatorioInteiro )
+    //}
+
+
+
+   //let cumprimento = (numeroAleatorioInteiro == numero ) ?
+                     //"Parabéns amigo!":
+
+                     //(numeroAleatorioInteiro == errado ) ?
+                    // "Que pena! Vai ficar para a próxima!":
                 
 
-                     document.write(cumprimento); 
+                     //document.write(cumprimento); 
+
 
 
 
